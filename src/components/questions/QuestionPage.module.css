@@ -1,0 +1,141 @@
+.wrapper {
+  min-height: 100vh;
+  background: var(--bg);
+}
+
+.header {
+  background: var(--navy);
+  padding: 16px 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.25);
+}
+
+.headerLeft {}
+
+.headerBrand {
+  color: var(--gold);
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+.headerRole {
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 13px;
+  margin-top: 2px;
+}
+
+.headerCenter {
+  text-align: center;
+}
+
+.pageCounter {
+  color: white;
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.answerCounter {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 11px;
+  margin-top: 2px;
+}
+
+.headerRight {
+  text-align: right;
+}
+
+.percentage {
+  color: var(--teal-light);
+  font-size: 22px;
+  font-weight: 900;
+}
+
+.percentageLabel {
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 11px;
+}
+
+.progressTrack {
+  height: 5px;
+  background: rgba(27, 79, 114, 0.15);
+}
+
+.progressFill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--teal), var(--teal-light));
+  transition: width 0.5s ease;
+  position: relative;
+}
+
+.progressFill::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
+  background-size: 200% 100%;
+  animation: shimmer 2s ease-in-out infinite;
+}
+
+.body {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+
+.sectionTags {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.sectionTag {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--teal);
+  background: rgba(20, 143, 119, 0.1);
+  border-radius: 6px;
+  padding: 4px 12px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 16px;
+  padding-top: 16px;
+}
+
+.hint {
+  font-size: 13px;
+  color: var(--text-light);
+  text-align: center;
+  line-height: 1.5;
+}
+
+@media (max-width: 640px) {
+  .header {
+    padding: 12px 16px;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .headerCenter {
+    order: 3;
+    width: 100%;
+  }
+  .hint {
+    display: none;
+  }
+}

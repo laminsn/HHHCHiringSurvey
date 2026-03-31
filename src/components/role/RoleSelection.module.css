@@ -1,0 +1,130 @@
+.wrapper {
+  min-height: 100vh;
+  background: var(--bg);
+  padding: 40px 20px;
+}
+
+.inner {
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 36px;
+}
+
+.stepBadge {
+  display: inline-block;
+  background: var(--navy);
+  color: white;
+  border-radius: var(--radius-sm);
+  padding: 6px 18px;
+  margin-bottom: 14px;
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+.title {
+  font-size: 32px;
+  color: var(--navy);
+  font-weight: 700;
+  margin: 0 0 10px;
+  font-family: var(--font-heading);
+}
+
+.subtitle {
+  color: var(--text-muted);
+  font-size: 15px;
+  max-width: 520px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+  gap: 14px;
+  margin-bottom: 36px;
+}
+
+.roleCard {
+  background: var(--surface);
+  border: 2px solid var(--border);
+  border-radius: 16px;
+  padding: 18px 22px;
+  cursor: pointer;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  transition: all 0.2s var(--ease-out);
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.05);
+  font-family: var(--font-body);
+}
+
+.roleCard:hover:not(.selected) {
+  border-color: var(--teal);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 16px rgba(20, 143, 119, 0.12);
+}
+
+.selected {
+  background: linear-gradient(135deg, var(--navy), var(--navy-dark));
+  border-color: var(--navy);
+  box-shadow: 0 8px 28px rgba(27, 79, 114, 0.25);
+}
+
+.selected .roleLabel {
+  color: white;
+}
+
+.selected .roleSub {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.roleIcon {
+  font-size: 30px;
+  min-width: 38px;
+}
+
+.roleInfo {
+  flex: 1;
+}
+
+.roleLabel {
+  font-weight: 700;
+  font-size: 15px;
+  color: var(--text);
+  margin-bottom: 3px;
+}
+
+.roleSub {
+  font-size: 12px;
+  color: var(--text-light);
+  line-height: 1.5;
+}
+
+.checkmark {
+  color: var(--gold);
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.actions {
+  text-align: center;
+}
+
+.questionCount {
+  color: var(--text-light);
+  font-size: 13px;
+  margin-top: 12px;
+}
+
+@media (max-width: 640px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

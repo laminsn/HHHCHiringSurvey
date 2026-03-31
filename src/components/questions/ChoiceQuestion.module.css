@@ -1,0 +1,143 @@
+.card {
+  background: var(--surface);
+  border-radius: var(--radius-lg);
+  padding: 26px 28px;
+  margin-bottom: 16px;
+  border: 1.5px solid var(--border);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+  transition: border-color 0.2s;
+}
+
+.answered {
+  border-color: rgba(20, 143, 119, 0.4);
+}
+
+.header {
+  display: flex;
+  gap: 14px;
+  margin-bottom: 18px;
+}
+
+.number {
+  background: var(--navy);
+  color: white;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 13px;
+  flex-shrink: 0;
+}
+
+.meta {
+  flex: 1;
+}
+
+.sectionRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 5px;
+  flex-wrap: wrap;
+}
+
+.section {
+  font-size: 11px;
+  font-weight: 800;
+  color: var(--teal);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.text {
+  color: var(--text);
+  font-size: 15px;
+  line-height: 1.7;
+  margin: 0;
+  font-weight: 500;
+}
+
+.options {
+  padding-left: 44px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.optBtn {
+  text-align: left;
+  padding: 14px 16px;
+  cursor: pointer;
+  border: 2px solid var(--border);
+  border-radius: 13px;
+  background: var(--surface);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  transition: all 0.15s;
+  font-family: var(--font-body);
+}
+
+.optBtn:hover:not(.optSelected) {
+  border-color: rgba(20, 143, 119, 0.5);
+  background: rgba(20, 143, 119, 0.03);
+}
+
+.radio {
+  width: 22px;
+  height: 22px;
+  border: 2px solid #CBD5E1;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: all 0.15s;
+}
+
+.radioDot {
+  width: 8px;
+  height: 8px;
+  background: white;
+  border-radius: 50%;
+}
+
+.optText {
+  flex: 1;
+  color: var(--text-muted);
+  font-size: 14px;
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+.optTextSelected {
+  color: var(--text);
+  font-weight: 600;
+}
+
+.discBadge {
+  font-size: 11px;
+  font-weight: 800;
+  border-radius: 6px;
+  padding: 3px 10px;
+  flex-shrink: 0;
+}
+
+.mbtiBadge {
+  font-size: 11px;
+  font-weight: 800;
+  color: var(--purple);
+  background: var(--purple-bg);
+  border-radius: 6px;
+  padding: 3px 10px;
+  flex-shrink: 0;
+}
+
+@media (max-width: 640px) {
+  .options {
+    padding-left: 0;
+  }
+}

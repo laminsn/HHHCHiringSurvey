@@ -1,0 +1,18 @@
+export const MBTI_PROFILES = {
+  ESTJ: "The Executive — Organized, decisive, and systematic. Thrives with clear structure, defined processes, and measurable outcomes.",
+  ESFJ: "The Caregiver — Warm, conscientious, and socially attuned. Prioritizes team harmony and excels in patient-facing, relationship-driven roles.",
+  ENTJ: "The Commander — Bold strategic leader who excels at long-term planning, organizational change, and driving results through others.",
+  ENFJ: "The Protagonist — Charismatic and deeply empathetic. Inspires and develops others; exceptional in leadership and patient advocacy.",
+  ESTP: "The Entrepreneur — Action-oriented and pragmatic. Thrives in dynamic healthcare environments requiring rapid clinical decision-making.",
+  ESFP: "The Performer — Enthusiastic and warm. Creates natural connection with patients and families; energizes any care team.",
+  ENTP: "The Debater — Inventive and strategic. Challenges assumptions and drives process innovation in clinical and operational settings.",
+  ENFP: "The Champion — Creative, empathetic, and driven by possibility. Excels in patient advocacy, marketing, and community engagement.",
+  ISTJ: "The Inspector — Reliable, meticulous, and thorough. Excels in compliance-intensive, documentation-heavy clinical and administrative roles.",
+  ISFJ: "The Protector — Caring, conscientious, and mission-driven. A dependable, steadfast cornerstone of any care team.",
+  INTJ: "The Architect — Strategic, independent, and analytically rigorous. Excellent for quality improvement, systems design, and data-driven leadership.",
+  INFJ: "The Advocate — Visionary and principled. Deeply committed to patient dignity, mission alignment, and meaningful impact.",
+  ISTP: "The Virtuoso — Calm under pressure with exceptional hands-on problem-solving. Thrives in skilled clinical environments.",
+  ISFP: "The Adventurer — Gentle, flexible, and present-focused. Naturally attuned to patient comfort, dignity, and lived experience.",
+  INTP: "The Thinker — Deeply analytical and intellectually curious. Excellent for clinical research, data analysis, and compliance work.",
+  INFP: "The Mediator — Idealistic and empathetic. Guided by values and purpose; exceptional in social work, chaplaincy, and patient support.",
+};

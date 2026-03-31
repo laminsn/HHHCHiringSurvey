@@ -1,0 +1,46 @@
+.wrapper {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.trackCircle {
+  fill: none;
+  stroke: var(--border);
+}
+
+.fillCircle {
+  fill: none;
+  transition: stroke-dashoffset 1.5s var(--ease-out);
+}
+
+.label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
+}
+
+.score {
+  font-size: 36px;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.sublabel {
+  font-size: 11px;
+  color: var(--text-light);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-top: 2px;
+}

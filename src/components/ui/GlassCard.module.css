@@ -1,0 +1,17 @@
+.card {
+  background: var(--surface);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: var(--shadow-sm);
+  transition: all var(--duration-normal) var(--ease-out);
+}
+
+.card:hover {
+  box-shadow: var(--shadow-md);
+}
+
+.highlighted {
+  border-color: var(--teal);
+  box-shadow: 0 4px 20px rgba(20, 143, 119, 0.12);
+}
